@@ -8,9 +8,13 @@ namespace sharp_api.Models
 {
     public class UserModel
     {
-        public string Id { get; set; }
-        public string Name { get; set; }
-        public string Email { get; set; }
-        public string Phone { get; set; } 
+        public string user_id { get; set; }
+        public string name { get; set; }
+        public string phone { get; set; } 
+        public string email { get; set; }
+    }
+    public class UserListModel
+    {
+        public List<UserModel> users { get; set;}
     }
 }
