@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34024.191
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sharp-api", "sharp-api\sharp-api.csproj", "{A1AA8C24-AE0E-4F9B-BD91-1E29B38D5BCE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sharp-Api", "Sharp-Api.csproj", "{36DEA98B-62CD-4696-B717-3A01A59CD7E0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A1AA8C24-AE0E-4F9B-BD91-1E29B38D5BCE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A1AA8C24-AE0E-4F9B-BD91-1E29B38D5BCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A1AA8C24-AE0E-4F9B-BD91-1E29B38D5BCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A1AA8C24-AE0E-4F9B-BD91-1E29B38D5BCE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36DEA98B-62CD-4696-B717-3A01A59CD7E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36DEA98B-62CD-4696-B717-3A01A59CD7E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36DEA98B-62CD-4696-B717-3A01A59CD7E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36DEA98B-62CD-4696-B717-3A01A59CD7E0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {80B34D34-7D3B-45D7-9C37-49FEB6BC5F1F}
+		SolutionGuid = {EA158500-B152-4340-B0F2-EAE5B074F691}
 	EndGlobalSection
 EndGlobal
