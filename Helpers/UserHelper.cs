@@ -20,7 +20,6 @@ namespace Sharp_Api.Helpers
             {
                 return null;
             }
-
             return users;
         }
     }

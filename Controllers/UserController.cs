@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using Sharp_Api.Helpers;
 using Sharp_Api.Models;
+using System.Collections.Generic;
 
 namespace Sharp_Api.Controllers
 {
@@ -13,14 +14,29 @@ namespace Sharp_Api.Controllers
 
 
         [HttpGet(Name = "GetUsers")]
-        public List<UserModel>? Get()
+        public List<UserModel> Get(string? id)
         {
+            Console.WriteLine(id);
             List<UserModel>? users = UserHelper.GetUserData();
+            List<UserModel> response = new List<UserModel>();
             if (users == null)
-            { 
-                return null;
+            {
+                return response;
             }
-            return users;
+            if (id != null)
+            {
+                UserModel? user = users.Find(x => x.user_id.Equals(id));
+                if (user == null)
+                {
+                    return response;
+                }
+
+                response.Add(user);
+                return response;
+            }
+            
+            response = users;
+            return response;
         }
     }
 }
