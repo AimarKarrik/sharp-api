@@ -16,16 +16,15 @@ namespace Sharp_Api.Controllers
         [HttpGet(Name = "GetUsers")]
         public List<UserModel> Get(string? id)
         {
-            Console.WriteLine(id);
             List<UserModel>? users = UserHelper.GetUserData();
-            List<UserModel> response = new List<UserModel>();
+            List<UserModel> response = new();
             if (users == null)
             {
                 return response;
             }
             if (id != null)
             {
-                UserModel? user = users.Find(x => x.user_id.Equals(id));
+                UserModel? user = users.Find(x => x.UserId.Equals(id));
                 if (user == null)
                 {
                     return response;
